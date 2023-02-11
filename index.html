@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <title>Document</title>
+    <style>
+    .swiper {
+   background-image: url(./navbar.png);
+    width: 100%;
+    height: 500px;
+
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    background-image: url(./navbar.png);
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .swiper-slide .bir{
+    width: 100%;
+    height: 100%;
+    background-image: url(./Star-Wars-Battlefront-II-combat.png);
+  }
+  .swiper-slide .bir h1{
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+.swiper-slide .ikki{
+    width: 100%;
+    height: 100%;
+    background-image: url(./CoD-WWII.png);
+}
+.swiper-slide .uch{
+    width: 100%;
+    height: 100%;
+    background-image: url(./call-of-duty-ww2-review_j23m.png);
+}
+
+
+
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <nav>
+                    <ul>
+                        <li><a href="#"><img src="../GAME/xbox.png" alt=""></a></li>
+                        <li><a href="#">Games</a>
+                            <select name="" id=""></select>
+                        </li>
+                        <li><a href="#">Consoles</a>
+                            <select name="" id=""></select>
+                        </li>
+                        <li><a href="#">Community</a></li>
+                        <li><a href="#"><input type="text"></a></li>
+                        <li><img src="./xbox.png"></li>
+
+
+                    </ul>
+                </nav>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="bir">
+                                <h1>Star Wars</h1>
+                        <h2>Battlefront II</h2>
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="ikki">
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="uch">
+
+                            </div>
+                        </div>
+                        <div class="swiper-wrapper">
+                            <div class="besh">`
+                                <h1>Star Wars</h1>
+                                <h2>Battlefront II</h2>
+
+                            </div>
+                        </div>
+                        </div>
+                        <h1>Star Wars</h1>
+                        <h2>Battlefront II</h2>
+                        
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+    </header>
+      <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            cssMode: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            mousewheel: true,
+            keyboard: true,
+        });
+    </script>
+</body>
+
+</html>
